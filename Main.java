@@ -1,7 +1,17 @@
+package registropacientes;
+
+import javax.swing.SwingUtilities;
+import registropacientes.controlador.ControladorPaciente;
+import registropacientes.modelo.RepositorioPacientes;
+import registropacientes.vista.VistaPaciente;
+
 public class Main {
     public static void main(String[] args) {
-        Vista vista = new Vista();
-        Controlador controlador = new Controlador(vista);
-        controlador.iniciarPrograma();
+        SwingUtilities.invokeLater(() -> {
+            VistaPaciente vista = new VistaPaciente();
+            RepositorioPacientes repositorio = new RepositorioPacientes();
+            new ControladorPaciente(vista, repositorio);
+            vista.setVisible(true);
+        });
     }
 }
