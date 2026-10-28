@@ -1,4 +1,4 @@
-package registropacientes;
+package registropacientes.principal;
 
 import javax.swing.SwingUtilities;
 import registropacientes.controlador.ControladorPaciente;
