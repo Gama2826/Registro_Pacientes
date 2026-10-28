@@ -101,7 +101,7 @@ public class VistaPaciente extends JFrame {
         setLocationRelativeTo(null);
     }
 
-    // ---------- Getters de los datos ----------
+    //Getters de los datos
     public int getTipoDocumento() { return cbTipoDocumento.getSelectedIndex(); }
     public String getNumDocumento() { return txtNumDocumento.getText().trim(); }
     public String getNombres() { return txtNombres.getText().trim(); }
